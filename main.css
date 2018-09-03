@@ -1,0 +1,88 @@
+/* Colors
+#2c1b2d
+#f7f6f9
+#a43252
+#d8ae20
+#4da5bc */
+
+/* Headers:
+font-family: 'Playfair Display',
+serif;
+font-family: 'News Cycle',
+sans-serif;
+font-family: 'Rubik',
+sans-serif; */
+
+/* Body:
+font-family: 'Lato',
+sans-serif;
+font-family: 'Merriweather',
+serif;
+font-family: 'Merriweather Sans',
+sans-serif;
+font-family: 'Source Sans Pro',
+sans-serif;
+font-family: 'Libre Baskerville',
+serif; */
+
+/* Multipurpose:
+font-family: 'Roboto',
+sans-serif;
+font-family: 'Titillium Web',
+sans-serif;
+font-family: 'Libre Franklin',
+sans-serif;
+font-family: 'Work Sans',
+sans-serif; */
+
+/* Boyce Fonts:
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Allura', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Arizonia', cursive;
+font-family: 'Averia Sans Libre', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Francois One', sans-serif; */
+
+
+
+.jumbotron {
+  padding: 30px;
+}
+
+.navbar-collapse {
+  text-align-last: center;
+}
+
+a.nav-item {
+  text-align: center;
+}
+
+.navbar-header {
+  padding-top: 50px;
+  padding-left: 500px;
+}
+
+.verticalLine {
+  border-right: thin solid grey;
+  height: 100px;
+}
+
+h4 {
+  text-align: center;
+}
+
+a.nav-item.nav-link {
+  color: #f7f6f9;
+}
+
+#cards,
+.row,
+.column,
+.column2 {
+  padding: 30px;
+}
+
+.footer {
+  padding-top: 30px;
+}
