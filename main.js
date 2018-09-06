@@ -13,15 +13,52 @@ document.getElementById("phonePic").innerHTML = header.phonePic;
 //footer
 const footer = {
   address: ["269 Saint James Place","Brooklyn NY United States", "347-689-7725", "<a href='guardianship.html' target='_blank'>cynthia@boyce-and-associates.com</a>"],
-  copyright: ["Copyright © Cynthia L. Boyce and Associates.","All rights reserved."],
+  copyright: ["Copyright © Cynthia L. Boyce and Associates.", "All rights reserved."],
+  license: "Member of the NYS Bar Association",
   danyale: "Coded by Danyale C. Walker"
 };
 
 document.getElementById("address").innerHTML = footer.address[0] + " " + "<br>" + footer.address[1] + " " + "<br>" + footer.address[2] + " " + "<br>" + footer.address[3];
 document.getElementById("copyright").innerHTML = footer.copyright[0] + " " + "<br>" + footer.copyright[1];
+document.getElementById("license").innerHTML = footer.license;
 document.getElementById("danyale").innerHTML = footer.danyale;
 
+ //navbar
+ const navBar = {
+   home: '<a class="nav-item nav-link verticalLine" href="home.html" target="_blank">Home</a>',
+   about: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="home.html">About</a>',
+   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">',
+   '<a class="dropdown-item" href="aboutCynthia.html" target="_blank">About Cynthia L. Boyce, Esq.</a>',
+   '<a class="dropdown-item" href="disclaimer.html" target="_blank">Disclaimer</a></div>'],
+   legal: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="legal-services.html">Legal <br> Services</a>',
+   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="legal-drop">',
+   '<a class="dropdown-item" href="estate-planning.html" target="_blank">Estate Planning</a>',
+   '<a class="dropdown-item" href="disclaimer.html" target="_blank">Disclaimer</a>',
+   '<a class="dropdown-item" href="credits.html" target="_blank">Credits</a></div>'],
+   guard: '<a class="nav-item nav-link verticalLine" href="guardianship.html" target="_blank">Guardianship</a>',
+   med: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="mediation.html" target="_blank">Mediation and <br> Conflict Resolution</a>',
+   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="mediation-services.html" target="_blank">Mediation Services</a>',
+  '<a class="dropdown-item" href="family-conflicts.html" target="_blank">Family Conflicts</a>',],
+  nonprofit: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="nonprofit.html" target="_blank">Nonprofit</a>',
+  '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">',
+  '<a class="dropdown-item" href="management-experience">Management Experience</a>'],
+  contactUs: '<a class="nav-item nav-link" href="contact.html" target="_blank">Contact Us</a>'
+ };
+document.getElementById("home").innerHTML = navBar.home;
 
+document.getElementById("about").innerHTML = navBar.about[0] + navBar.about[1] + navBar.about[2] + navBar.about[3];
+
+document.getElementById("legal").innerHTML = navBar.legal[0] + navBar.legal[1] + navBar.legal[2] + navBar.legal[3] + navBar.legal[4];
+
+document.getElementById("guard").innerHTML = navBar.guard;
+
+document.getElementById("mediation").innerHTML = navBar.med[0] + navBar.med[1] + navBar.med[2];
+
+document.getElementById("nonprofit").innerHTML = navBar.nonprofit[0] + navBar.nonprofit[1] + navBar.nonprofit[2];
+
+document.getElementById("contactUs").innerHTML = navBar.contactUs;
+
+//HOME PAGE MAIN SECTION
 //section middle
 const info = {
   resp: "WE PROVIDE RESPONSIVE, EMPOWERING EXCELLENCE!",
@@ -50,43 +87,3 @@ document.getElementById("contact").innerHTML = info.contact;
  document.getElementById("guardText").innerHTML = homeSection.guardText;
  document.getElementById("nonprofitLink").innerHTML = homeSection.nonprofitLink;
  document.getElementById("nonprofitText").innerHTML = homeSection.nonprofitText;
-
- //navbar
- const navBar = {
-   home: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="home.html">Home</a>',
-   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="planning">',
-   '<a class="dropdown-item" href="about.html" target="_blank">Estate Planning</a>',
-   '<a class="dropdown-item" href="inspiration.html" target="_blank">Inspirational Quotes</a>',
-   '<a class="dropdown-item" href="posts-blog.html">Posts/Blog</a>',
-   '<a class="dropdown-item" href="resources.html" target="_blank">Resources</a></div>'],
-   legal: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="legal-services.html">Legal <br> Services</a>',
-   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="legal-drop">',
-   '<a class="dropdown-item" href="estate-planning.html" target="_blank">Estate Planning</a>',
-   '<a class="dropdown-item" href="speaking.html" target="_blank">Speaking</a>',
-   '<a class="dropdown-item" href="jursidication.html" target="_blank">Jurisdiction</a>',
-   '<a class="dropdown-item" href="disclaimer.html" target="_blank">Disclaimer</a>',
-   '<a class="dropdown-item" href="advertisement.html" target="_blank">Advertisement</a>',
-   '<a class="dropdown-item" href="credits.html" target="_blank">Credits</a></div>'],
-   guard: '<a class="nav-item nav-link verticalLine" href="guardianship.html" target="_blank">Guardianship</a>',
-   med: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="mediation.html" target="_blank">Mediation and <br> Credit Resolution</a>',
-   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="mediation-services.html" target="_blank">Mediation Services</a>',
-  '<a class="dropdown-item" href="family-conflicts.html" target="_blank">Family Conflicts</a>',
-  '<a class="dropdown-item" href="training.html" target="_blank">Training</a></div>'],
-  nonprofit: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="nonprofit.html" target="_blank">Nonprofit</a>',
-  '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">',
-  '<a class="dropdown-item" href="management-experience">Management Experience</a>',
-  '<a class="dropdown-item" href="speaking.html" target="_blank">Speaking</a></div>'],
-  contactUs: '<a class="nav-item nav-link verticalLine" href="contact.html" target="_blank">Contact Us</a>'
- };
-
-document.getElementById("home").innerHTML = navBar.home[0] + navBar.home[1] + navBar.home[2] + navBar.home[3] + navBar.home[4] + navBar.home[5];
-
-document.getElementById("legal").innerHTML = navBar.legal[0] + navBar.legal[1] + navBar.legal[2] + navBar.legal[3] + navBar.legal[4] + navBar.legal[5]+ navBar.legal[6]+ navBar.legal[7];
-
-document.getElementById("guard").innerHTML = navBar.guard;
-
-document.getElementById("mediation").innerHTML = navBar.med[0] + navBar.med[1] + navBar.med[2] + navBar.med[3];
-
-document.getElementById("nonprofit").innerHTML = navBar.nonprofit[0] + navBar.nonprofit[1] + navBar.nonprofit[2] + navBar.nonprofit[3];
-
-document.getElementById("contactUs").innerHTML = navBar.contactUs;
