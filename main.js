@@ -12,7 +12,7 @@ document.getElementById("phonePic").innerHTML = header.phonePic;
 
 //footer
 const footer = {
-  address: ["269 Saint James Place","Brooklyn NY United States", "347-689-7725", "<a href='guardianship.html' target='_blank'>cynthia@boyce-and-associates.com</a>"],
+  address: ["269 Saint James Place","Brooklyn NY United States", "347-689-7725", "<a href='guardianship.html'>cynthia@boyce-and-associates.com</a>"],
   copyright: ["Copyright © Cynthia L. Boyce and Associates.", "All rights reserved."],
   license: "Member of the NYS Bar Association",
   danyale: "Coded by Danyale C. Walker"
@@ -25,24 +25,22 @@ document.getElementById("danyale").innerHTML = footer.danyale;
 
  //navbar
  const navBar = {
-   home: '<a class="nav-item nav-link verticalLine" href="home.html" target="_blank">Home</a>',
-   about: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="home.html">About</a>',
+   home: '<a class="nav-item nav-link verticalLine" href="Home.html">Home</a>',
+   about: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>',
    '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">',
-   '<a class="dropdown-item" href="aboutCynthia.html" target="_blank">About Cynthia L. Boyce, Esq.</a>',
-   '<a class="dropdown-item" href="disclaimer.html" target="_blank">Disclaimer</a></div>'],
+   '<a class="dropdown-item" href="About-Cynthia.html">About Cynthia L. Boyce, Esq.</a>',
+   '<a class="dropdown-item" href="Disclaimer.html">Disclaimer</a></div>'],
    legal: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="legal-services.html">Legal <br> Services</a>',
    '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="legal-drop">',
-   '<a class="dropdown-item" href="estate-planning.html" target="_blank">Estate Planning</a>',
-   '<a class="dropdown-item" href="disclaimer.html" target="_blank">Disclaimer</a>',
-   '<a class="dropdown-item" href="credits.html" target="_blank">Credits</a></div>'],
-   guard: '<a class="nav-item nav-link verticalLine" href="guardianship.html" target="_blank">Guardianship</a>',
-   med: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="mediation.html" target="_blank">Mediation and <br> Conflict Resolution</a>',
-   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="mediation-services.html" target="_blank">Mediation Services</a>',
-  '<a class="dropdown-item" href="family-conflicts.html" target="_blank">Family Conflicts</a>',],
-  nonprofit: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="nonprofit.html" target="_blank">Nonprofit</a>',
+   '<a class="dropdown-item" href="estate-planning.html">Estate Planning</a>',
+   '<a class="dropdown-item" href="disclaimer.html">Disclaimer</a>',
+   '<a class="dropdown-item" href="credits.html">Credits</a></div>'],
+   guard: '<a class="nav-item nav-link verticalLine" href="Guardianship.html">Guardianship</a>',
+   med: '<a class="nav-item nav-link verticalLine btn"  href="Mediation.html">Mediation and <br> Conflict Resolution</a>',
+  nonprofit: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="nonprofit.html">Nonprofit</a>',
   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">',
   '<a class="dropdown-item" href="management-experience">Management Experience</a>'],
-  contactUs: '<a class="nav-item nav-link" href="contact.html" target="_blank">Contact Us</a>'
+  contactUs: '<a class="nav-item nav-link" href="Contact-Us.html">Contact Us</a>'
  };
 document.getElementById("home").innerHTML = navBar.home;
 
@@ -52,7 +50,7 @@ document.getElementById("legal").innerHTML = navBar.legal[0] + navBar.legal[1] +
 
 document.getElementById("guard").innerHTML = navBar.guard;
 
-document.getElementById("mediation").innerHTML = navBar.med[0] + navBar.med[1] + navBar.med[2];
+document.getElementById("mediation").innerHTML = navBar.med;
 
 document.getElementById("nonprofit").innerHTML = navBar.nonprofit[0] + navBar.nonprofit[1] + navBar.nonprofit[2];
 
@@ -77,9 +75,9 @@ document.getElementById("contact").innerHTML = info.contact;
 
 //section with cards
  const homeSection = {
-   guardLink: '<a href="guardianship.html" target="_blank">Guardianship</a>',
+   guardLink: '<a href="guardianship.html">Guardianship</a>',
    guardText: "Do you know someone who needs assistance with daily activities or with handling finances? Contact us for caring and sensitive legal help.",
-   nonprofitLink: '<a href="nonprofit.html" target="_blank">Nonprofit Organization</a>',
+   nonprofitLink: '<a href="nonprofit.html">Nonprofit Organization</a>',
    nonprofitText: "Contact us to help you create solutions resolving internal conflicts using mediation, facilitation, training and other individualized and empowering techniques. Sign up to get free updates on conflict resolution and nonprofit issues."
  };
 

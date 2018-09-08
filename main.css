@@ -91,6 +91,7 @@ a.nav-item.nav-link {
   padding-top: 30px;
 }
 
-.guardianship {
+.guardianship,
+.disclaimer {
   padding: 30px;
 }

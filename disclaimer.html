@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-  <!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/> -->
+  <link rel="icon" type="image/png" href="legal-icon.png" sizes="32x32"/>
   <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Arizonia|Averia+Sans+Libre|Cabin+Sketch|Francois+One|Fredericka+the+Great" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=News+Cycle|Playfair+Display|Rubik" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Merriweather|Merriweather+Sans|Source+Sans+Pro"
@@ -16,9 +16,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="main.css">
 
-  <title>Cynthia L. Boyce and Associates</title>
+  <title>Disclaimer</title>
 </head>
-<main>
   <header>
     <div class="jumbotron jumbotron-fluid">
       <nav class="navbar navbar-light bg-light justify-content-between">
@@ -35,6 +34,7 @@
     <div class="collapse navbar-collapse col-md-6 offset-md-3" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item dropdown" id="home"></li>
+        <li class="nav-item dropdown" id="about"></li>
         <li class="nav-item dropdown" id="legal"></li>
         <li class="nav-item"id="guard"></li>
         <li class="nav-item dropdown" id="mediation"></li>
@@ -47,16 +47,23 @@
     </div>
   </header>
 
-<!-- <main> -->
+<main class="disclaimer">
+  <section>
+    <h1 id="disc"></h1>
+  </section>
+  <section>
+    <p id="discPara"></p>
+
+  </section>
 </main>
 
 <footer>
   <div class="jumbotron jumbotron-fluid">
     <div class="row justify-content-around">
-      <div class="col-4">
+      <div class="col-4 footer1">
         <p id="address"></p>
       </div>
-      <div class="col-4 footer">
+      <div class="col-4 footer2">
         <p id="copyright"></p>
         <p id="license"></p>
         <p id="danyale"></p>
@@ -65,4 +72,14 @@
   </div>
 </footer>
 <script src="main.js"></script>
+
+<script>
+const disclaimer = {
+   disc: "DISCLAIMER",
+   discPara: ['The material in this website is presented for general information purposes only. Cynthia L. Boyce & Associates (sometimes referenced as the "Firm") does not guarantee that the materials on the website, blogs, links or other attachments or materials referenced herein are correct, complete or up to date. Nothing herein constitutes legal advice and does not substitute for consultation with a licensed attorney about specific matters. No one should rely on the materials in this website or materials attached to or referenced by the website without retaining an attorney or other licensed professional. Moreover, Cynthia L. Boyce & Associates does not endorse third parties, if any, referenced or cited and materials provided or cited by third parties does not necessarily reflect the opinions of Cynthia L. Boyce & Associates or any parties affiliated with this Firm.', 'Viewing these materials or contacting Cynthia L. Boyce & associates does not create an attorney-client relationship. This website does not create a contract with any viewer. Sending an email, calling or otherwise contacting Cynthia L. Boyce & Associates does not contractually obligate Cynthia L. Boyce & Associates to represent you as your attorney. Cynthia L. Boyce & Associates cannot serve as your attorney unless the Firm and you expressly agree, in writing, that we will serve as your attorney.', 'This website, blogs, attachments, links or other materials, if any, referenced in this website may be considered advertisement in some jurisdictions under the applicable law and ethical rules. Do not make a decision to select an attorney or mediator based solely on advertisements.']
+};
+
+document.getElementById("disc").innerHTML = disclaimer.disc;
+document.getElementById("discPara").innerHTML = "<p>" + disclaimer.discPara[0] + "</p>" + "<p>" + disclaimer.discPara[1] + "</p>" + "<p>" + disclaimer.discPara[2]+ "</p>";
+</script>
 </html>
