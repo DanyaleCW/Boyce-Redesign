@@ -9,6 +9,20 @@ document.getElementById("name").innerHTML = header.name;
 document.getElementById("phone").innerHTML = "CALL US" + " " + header.phone;
 document.getElementById("phonePic").innerHTML = header.phonePic;
 
+// const header = {
+//   contactInfo: function() {
+//     return this.name + "<br>" + this.phone + "<br>" + this.phonePic;
+//   }
+// }
+//
+// const header1 = {
+//   name: "Cynthia L. Boyce and Associates",
+//   phone: "347-689-7725",
+//   phonePic: '<img src="phone.png" alt="phone">'
+// }
+// const x = header.contactInfo.apply(header1);
+// document.getElementById("demo").innerHTML = x;
+
 
 //footer
 const footer = {
@@ -37,10 +51,10 @@ document.getElementById("danyale").innerHTML = footer.danyale;
    '<a class="dropdown-item" href="credits.html">Credits</a></div>'],
    guard: '<a class="nav-item nav-link verticalLine" href="Guardianship.html">Guardianship</a>',
    med: '<a class="nav-item nav-link verticalLine btn"  href="Mediation.html">Mediation and <br> Conflict Resolution</a>',
-  nonprofit: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="nonprofit.html">Nonprofit</a>',
-  '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">',
-  '<a class="dropdown-item" href="management-experience">Management Experience</a>'],
-  contactUs: '<a class="nav-item nav-link" href="Contact-Us.html">Contact Us</a>'
+   nonprofit: ['<a class="nav-item nav-link verticalLine btn dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="nonprofit.html">Nonprofit</a>',
+   '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">',
+   '<a class="dropdown-item" href="management-experience">Management Experience</a>'],
+   contactUs: '<a class="nav-item nav-link" href="Contact-Us.html">Contact Us</a>'
  };
 document.getElementById("home").innerHTML = navBar.home;
 
@@ -85,3 +99,5 @@ document.getElementById("contact").innerHTML = info.contact;
  document.getElementById("guardText").innerHTML = homeSection.guardText;
  document.getElementById("nonprofitLink").innerHTML = homeSection.nonprofitLink;
  document.getElementById("nonprofitText").innerHTML = homeSection.nonprofitText;
+
+ var myButton = document.querySelector('button');
