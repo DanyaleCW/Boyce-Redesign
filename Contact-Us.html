@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-  <link rel="icon" type="image/png" href="legal-icon.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="./images/legal-icon.png" sizes="32x32"/>
   <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Arizonia|Averia+Sans+Libre|Cabin+Sketch|Francois+One|Fredericka+the+Great" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=News+Cycle|Playfair+Display|Rubik" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville|Merriweather|Merriweather+Sans|Source+Sans+Pro"
@@ -103,7 +103,7 @@
 <section>
 
   <div id="map-container-2" class="z-depth-1" style="height: 500px"></div>
-  <script src="https://maps.google.com/maps/api/js?key=API HEY HERE"></script>
+  <script src="https://maps.google.com/maps/api/js?key=API KEY HERE"></script>
 
 <script>
 function custom_map() {
@@ -285,28 +285,8 @@ Google Maps-->
 </footer>
 </section>
 
-<script src="main.js"></script>
-<script>
-const contact = {
-  cont: "CONTACT US",
-  three: "We offer three ways to contact us",
-  emailIcon: '<img src="envelope.png" alt="email icon">',
-  email1: "Use the form below to send us an email. We generally reply within 24 hours.",
-  phoneIcon: '<img src="iphone.png" alt="phone icon">',
-  phone1: "Call us at 347-689-7725.",
-  mapIcon: '<img src="map.png" alt="map icon">',
-  map1: "Visit us at 269 Saint James Place, Brooklyn, NY, United States by appointment only. Use the map below to get directions."
-};
-
-document.getElementById("cont").innerHTML = contact.cont;
-document.getElementById("three").innerHTML = contact.three;
-document.getElementById("emailIcon").innerHTML = contact.emailIcon;
-document.getElementById("email1").innerHTML = contact.email1;
-document.getElementById("phoneIcon").innerHTML = contact.phoneIcon;
-document.getElementById("phone1").innerHTML = contact.phone1;
-document.getElementById("mapIcon").innerHTML = contact.mapIcon;
-document.getElementById("map1").innerHTML = contact.map1;
-</script>
+<script src="./js/main.js"></script>
+<script src="./js/contact.js"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUQnqEo76fGzwKlTrZ8l4VLSzogc5vWCA&callback=initMap" async defer></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
