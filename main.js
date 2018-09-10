@@ -26,7 +26,7 @@ document.getElementById("phonePic").innerHTML = header.phonePic;
 
 //footer
 const footer = {
-  address: ["269 Saint James Place","Brooklyn NY United States", "347-689-7725", "<a href='guardianship.html'>cynthia@boyce-and-associates.com</a>"],
+  address: ["269 Saint James Place","Brooklyn, NY United States", "347-689-7725", "<a href='guardianship.html'>cynthia@boyce-and-associates.com</a>"],
   copyright: ["Copyright © Cynthia L. Boyce and Associates.", "All rights reserved."],
   license: "Member of the NYS Bar Association",
   danyale: "Coded by Danyale C. Walker"
@@ -100,4 +100,34 @@ document.getElementById("contact").innerHTML = info.contact;
  document.getElementById("nonprofitLink").innerHTML = homeSection.nonprofitLink;
  document.getElementById("nonprofitText").innerHTML = homeSection.nonprofitText;
 
- var myButton = document.querySelector('button');
+// .required:after {
+//   content:" *";
+// }
+
+ // (function() {
+ //   'use strict';
+ //   window.addEventListener('load', function() {
+ //     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+ //     var forms = document.getElementsByClassName('needs-validation');
+ //     // Loop over them and prevent submission
+ //     var validation = Array.prototype.filter.call(forms, function(form) {
+ //       form.addEventListener('submit', function(event) {
+ //         if (form.checkValidity() === false) {
+ //           event.preventDefault();
+ //           event.stopPropagation();
+ //         }
+ //         form.classList.add('was-validated');
+ //       }, false);
+ //     });
+ //   }, false);
+ // })();
+ //
+ // var myButton = document.querySelector('button');
+ //
+ // var map;
+ //  function initMap() {
+ //    map = new google.maps.Map(document.getElementById('map'), {
+ //      center: {lat: -34.397, lng: 150.644},
+ //         zoom: 8
+ //       });
+ //     }

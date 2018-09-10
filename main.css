@@ -44,8 +44,6 @@ font-family: 'Averia Sans Libre', cursive;
 font-family: 'Cabin Sketch', cursive;
 font-family: 'Francois One', sans-serif; */
 
-
-
 .jumbotron {
   padding: 30px;
 }
@@ -68,7 +66,8 @@ a.nav-item {
   height: 100px;
 }
 
-h4 {
+h4,
+#three {
   text-align: center;
 }
 
@@ -79,8 +78,35 @@ a.nav-item.nav-link {
 #cards,
 .row,
 .column,
-.column2 {
+.column2,
+.guardianship,
+.disclaimer,
+.aboutCyn,
+.contactUs {
   padding: 30px;
+}
+
+form {
+  padding: 0px 120px 30px 120px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+#map {
+  height: 50%;
+}
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  font-size: 100%;
 }
 
 .footer1 {
@@ -91,8 +117,8 @@ a.nav-item.nav-link {
   padding-top: 30px;
 }
 
-.guardianship,
-.disclaimer,
-.aboutCyn {
-  padding: 30px;
+#emailIcon,
+#phoneIcon,
+#mapIcon {
+  display:block;
 }
